@@ -1,9 +1,23 @@
 
 
-const hamburgerMenu= document.querySelector(".hamburger-menu");
+const menu = document.querySelector(".header-right > a");
+const hamburgerMenuOpen = document.querySelector(".hamburger-menu");
+const hamburgerMenuclose = document.querySelector(".hamburger-menu > a");
 
 
-hamburgerMenu.addEventListener("click", function(){
-    hamburgerMenu.classList.add(".active");
+
+
+menu.addEventListener("click", function(){
+    
+    hamburgerMenuOpen.classList.add("active");
+
+    
+    
+
+});
+
+hamburgerMenuclose.addEventListener("click", function(){
+
+    hamburgerMenuOpen.classList.remove("active");
 
 });
